@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    /*--primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3,127,255,.3);
+    --white-color: #FFF;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #191D2B;
+    --scrollbar-bg-color: #383838;
+    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-track-color: #383838;*/
+
+    --darkmode-dark: #0a0a0b;
+    --darkmode-white: #f5f5f5;
+    --darkmode-color1: #eae5ff;
+    --darkmode-color2: #a089ff;
+    --darkmode-color3: #6640ff;
+    --darkmode-color4: #3a00ff;
+    --darkmode-color5: #d9d9d9;
+    --darkmode-color6: #fb6eb6;
+    --darkmode-color7: #fea8a7;
+
+    --lightmode-dark: #0d0d0d;
+    --lightmode-white: #f5f5f5;
+    --lightmode-color1: #eae5ff;
+    --lightmode-color2: #a089ff;
+    --lightmode-color3: #6640ff;
+    --lightmode-color4: #dfdede;
+    --lightmode-color5: #fb6eb6;
+    --lightmode-color6: #fea8a7;
+
+}   
+
+body {
+    display: flex;
+    background-color: var(--darkmode-dark);
+    color: var(--darkmode-white);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cad-tit{
+    border: 2px solid var(--darkmode-color5);
+    border-radius:  10px;
+    padding: 30px;
+    min-width: 30%;
+    overflow: auto;
+}
+.h1-form{
+    margin: 16px;
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.inp{
+
+    /*padding: 8px ;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--background-dark-color);
+    color: var(--font-light-color);
+    width: 100%;
+    box-sizing: border-box;*/
+    padding: 5px ;
+    margin: 5px;
+    outline: none;
+    background-color: var(--darkmode-dark) ;
+    color: var(--darkmode-white);
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--darkmode-color5);
+   
+}
+.inp:focus{
+    border-color: var(--darkmode-color6) ;
+    transition: .3s;
+}
+.spam-form{
+    font-size: 12px;
+    margin:3px;
+    padding: 1px;
+    color: red;
+    display: none;
+}
+.radio{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 16px;
+}
+.botao{
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 5000px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-image: repeating-linear-gradient(to right, var(--darkmode-color6), var(--darkmode-color7));
+    color: var(--white-color);
+    font-weight: bold;
+
+}
+
+.botao:hover{
+    background-image: repeating-linear-gradient(to right, var(--darkmode-color7), var(--darkmode-color6));
+    transition: .3s;
+}
+@media screen and (max-width: 600px) {
+   .radio{
+       flex-direction: column;
+       gap: 8px;
+   }
+  }

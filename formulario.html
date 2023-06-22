@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js " defer></script>
+</head>
+
+<body>
+    <div class="cad-tit">
+        <h1 class="h1-form">Cadastro</h1>
+
+
+        <form class="form" action="cadastro.php" method="post" id="form" >
+            <div>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inp validacao" oninput="nomevalidação()">
+                <span class="spam-form">Nome invalido!</span>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="inp validacao" oninput="emailvalidacao()">
+                <span class="spam-form">E-mail invalido!</span>
+            </div>
+
+            <div>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="inp validacao" oninput="senhavalidacao()">
+                <span class="spam-form">Senha invalido! A senha deve ter 8 caracteres!</span>
+
+            </div>
+           <!-- <div>
+                <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Confirme sua senha" oninput="senhavalidacao2()"
+                    class="inp validacao" >
+                <span class="spam-form">As senhas precisam se iguais!</span>
+
+            </div>-->
+            
+            <div>
+                <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" class="inp validacao" oninput="validacaocpf() " >
+                <span class="spam-form">CPF invalido!</span>
+
+            </div>
+            <br>
+            <p>Genero</p>
+            <br>
+            <div class="radio">
+                
+                <div>
+                    <input type="radio"  id="m" name="genero">
+                    <label for="m">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio"  id="f" name="genero">
+                    <label for="f">Feiminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="b" name="genero">
+                    <label for="b">Outro</label>
+         
+                </div>
+            </div>
+            <br>
+            <input class="botao" type="submit" value="Cadastrar">
+    </div>
+    </form>
+
+</body>
+
+</html>
